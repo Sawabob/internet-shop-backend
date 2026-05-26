@@ -34,6 +34,12 @@ app.use((req, res) => {
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
-  console.log(`Сервер запущено на порту ${PORT}`);
-});
+// Запуск сервера тільки якщо не в тестовому режимі
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(PORT, () => {
+    console.log(`Сервер запущено на порту ${PORT}`);
+  });
+}
+
+// Експорт для тестування
+module.exports = app;

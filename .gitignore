@@ -36,6 +36,7 @@ build/
 # Testing
 coverage/
 .nyc_output/
+*.lcov
 
 # Temporary files
 *.tmp
@@ -51,3 +52,4 @@ frontend/.env
 
 # Backend specific
 backend/.env
+backend/coverage/
