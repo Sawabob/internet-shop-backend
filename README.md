@@ -64,7 +64,7 @@ internet-shop/
 
 ### 1. Клонувати репозиторій
 ```bash
-git clone https://github.com/YOUR_USERNAME/internet-shop.git
+git clone https://github.com/Sawabob/internet-shop.git
 cd internet-shop/backend
 ```
 
